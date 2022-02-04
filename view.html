@@ -12,9 +12,10 @@
     <script src="js/view.js"></script>
   </head>
   <body>
-    <div class="container bg-light mt-5 pt-4 pb-5" id="inputContainer">
+    <div class="head bg-dark text-light p-4">
       <h1 id="title">Data From</h1>
-      <hr />
+    </div>
+    <div class="container bg-light mt-5 pt-4 pb-5" id="inputContainer">
       <div class="row">
         <h2>Full Name:</h2>
         <label id="fullName"></label>
@@ -25,11 +26,16 @@
       </div>
       <div class="row mt-3">
         <div class="col-lg-4 col-md-4 col-sm-4">
-          <button class="btn btn-outline-primary" onclick="history.back()">
+          <button class="btn btn-outline-dark" onclick="history.back()">
             Go Back
           </button>
         </div>
       </div>
     </div>
+    <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark text-white-50">
+      <div class="container text-center">
+        <small>Made By d3vCr0w</small>
+      </div>
+    </footer>
   </body>
 </html>

@@ -3,7 +3,7 @@ $(() => {
   $('#birthday').attr('max', today);
 
   jQuery.validator.addMethod('lettersonly', function (value, element) {
-    return this.optional(element) || /^[a-z]+$/i.test(value);
+    return this.optional(element) || /^[a-z ]+$/i.test(value);
   });
 
   $('#inputForm').validate({
